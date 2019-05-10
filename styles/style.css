@@ -1,0 +1,126 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #161616;
+    color: white;
+}
+
+#animatioDiv{
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 100%;
+}
+
+.algo-button-div{
+
+    margin-top: 10px; margin-bottom: 10px;
+    
+}
+
+.inputBox {
+    background-color: floralwhite;
+    border: none;
+    color: black;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 2px;
+    border-radius: 12px;   
+}
+
+.algo-button{
+
+    background-color: #4CAF50;
+    border: none;
+    color: floralwhite;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 2px;
+    border-radius: 12px;
+}
+
+
+#ds_selectDIV, #ds_operationsDIV{
+    padding:3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+
+.media-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.media-icon{
+    color: white;
+}
+
+#drawDiv {
+
+    border: solid 1px white;
+
+    width: 700px;
+
+    height: 550px;
+
+    margin-left: 3px;
+
+    overflow: hidden;
+
+    background-color: #161616;
+
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:#4CAF50;;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 0.8;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 0.8;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 0.8;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 0.8;}
+    to {bottom: 0; opacity: 0;}
+  }

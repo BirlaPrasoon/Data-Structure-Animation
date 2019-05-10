@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.1/Tone.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scribbletune/1.9.4/scribbletune.js"></script>
+</head>
+<body>
+
+    <button onclick="fn()">BTN</button>
+
+    <script>
+
+        function fn(){
+            if (Tone.context.state !== 'running') {
+    Tone.context.resume();
+  }
+        }
+
+        scribble.clip({ 
+            synth: 'PolySynth', // new property: synth
+            pattern: '[xx]', 
+            notes: 'C4 D4 C4 D#4 C4 D4 C4 Bb3' 
+        }).start();
+        Tone.Transport.start();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>BST</title>
+
+        <link href="styles/custom-jquery.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="fontawesome-free-5.8.1-web\css\all.css" >
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css" >
+
+        <script type="text/javascript" src="btv/third-party/jsgl.js"></script>
+
+        <script type="text/javascript" src="btv/third-party/jquery-1.9.1.js"></script>
+
+        <script type="text/javascript" src="btv/third-party/jquery-ui-1.10.3.custom.js"></script>
+
+        <script type="text/javascript" src="btv/btv.js"></script>
+
+        <script type="text/javascript" src="btv/Elements.js"></script>
+
+        <script type="text/javascript" src="btv/BinaryTree.js"></script>
+
+        <script type="text/javascript" src="btv/Algorithms.js"></script>
+
+        <script type="text/javascript" src="btv/Visualiser.js"></script>
+
+        <script type="text/javascript" src="btv/Controllers.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="content" class="container">
+
+            <h1 id="binary_search_tree" class="text-center">Animation of Data Structure Techniques</h1>
+
+            <div id="animationDiv" class="row">
+
+                <div id="refreshButton" class="col-auto">
+                    <button onclick="init()"><i class="fas fa-redo-alt"></i></button>
+                </div>
+
+            </div>
+
+            
+
+            <div id = "wrapper" class="row">                    
+
+                    <div id="controlDiv" class="col-4">
+                        
+                            <div id="dataStructure" class="col">
+                            </div> 
+                            <div id="historyLegend" class="col" style="text-align: center;">History</div>
+                            <div id="historyDiv" class="col" style="overflow-x: hidden;"></div>
+
+                    </div>
+
+                    <div id="drawDiv" class="col-auto"></div>
+
+            </div>
+
+            <div id="speed-controllers" class="row m-auto">
+            </div>
+
+        </div>
+
+        <!-- <button onclick="showNotification('Notification')">Button</button> -->
+
+        <div id="snackbar">Some text some message..</div>
+
+        <script type="text/javascript" src="btv/init.js"></script>
+
+    </body>
+</html>
